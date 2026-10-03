@@ -1,0 +1,339 @@
+{
+  "n_customers": 10127,
+  "churn_rate": 0.1606596227905599,
+  "n_churners": 1627,
+  "missing_sensitivity": {
+    "Unknown as category (chosen)": 0.9238,
+    "Drop rows with Unknown": 0.9182,
+    "Mode imputation": 0.9237
+  },
+  "chi_square": {
+    "Contacts_Count_12_mon": {
+      "cramers_v": 0.2407,
+      "p_holm": 0.0
+    },
+    "Months_Inactive_12_mon": {
+      "cramers_v": 0.1979,
+      "p_holm": 0.0
+    },
+    "Total_Relationship_Count": {
+      "cramers_v": 0.1675,
+      "p_holm": 0.0
+    },
+    "Gender": {
+      "cramers_v": 0.037,
+      "p_holm": 0.0012
+    },
+    "Income_Category": {
+      "cramers_v": 0.0356,
+      "p_holm": 0.125
+    },
+    "Education_Level": {
+      "cramers_v": 0.0351,
+      "p_holm": 0.206
+    },
+    "Dependent_count": {
+      "cramers_v": 0.0306,
+      "p_holm": 0.2745
+    },
+    "Marital_Status": {
+      "cramers_v": 0.0245,
+      "p_holm": 0.2745
+    },
+    "Card_Category": {
+      "cramers_v": 0.0127,
+      "p_holm": 0.4421
+    }
+  },
+  "t_tests": {
+    "Total_Trans_Ct": {
+      "mean_attrited": 44.9336,
+      "mean_existing": 68.6726,
+      "cohens_d": -1.2362,
+      "p_holm": 0.0
+    },
+    "Total_Ct_Chng_Q4_Q1": {
+      "mean_attrited": 0.5544,
+      "mean_existing": 0.7424,
+      "cohens_d": -0.8267,
+      "p_holm": 0.0
+    },
+    "Total_Revolving_Bal": {
+      "mean_attrited": 672.823,
+      "mean_existing": 1256.6041,
+      "cohens_d": -0.6921,
+      "p_holm": 0.0
+    },
+    "Total_Trans_Amt": {
+      "mean_attrited": 3095.0258,
+      "mean_existing": 4654.6559,
+      "cohens_d": -0.5247,
+      "p_holm": 0.0
+    },
+    "Avg_Utilization_Ratio": {
+      "mean_attrited": 0.1625,
+      "mean_existing": 0.2964,
+      "cohens_d": -0.4988,
+      "p_holm": 0.0
+    },
+    "Total_Amt_Chng_Q4_Q1": {
+      "mean_attrited": 0.6943,
+      "mean_existing": 0.7725,
+      "cohens_d": -0.3616,
+      "p_holm": 0.0
+    },
+    "Credit_Limit": {
+      "mean_attrited": 8136.0395,
+      "mean_existing": 8726.8775,
+      "cohens_d": -0.065,
+      "p_holm": 0.0493
+    },
+    "Customer_Age": {
+      "mean_attrited": 46.6595,
+      "mean_existing": 46.2621,
+      "cohens_d": 0.0505,
+      "p_holm": 0.1154
+    },
+    "Months_on_book": {
+      "mean_attrited": 36.1782,
+      "mean_existing": 35.8806,
+      "cohens_d": 0.0376,
+      "p_holm": 0.1604
+    }
+  },
+  "model_metrics": {
+    "Logistic regression": {
+      "ROC-AUC": 0.9238,
+      "PR-AUC": 0.7546,
+      "Churners captured in top 20%": 0.7695,
+      "Precision @ p>0.5": 0.7622,
+      "Recall @ p>0.5": 0.5771
+    },
+    "Decision tree (depth 4)": {
+      "ROC-AUC": 0.9432,
+      "PR-AUC": 0.7903,
+      "Churners captured in top 20%": 0.8328,
+      "Precision @ p>0.5": 0.8227,
+      "Recall @ p>0.5": 0.6361
+    }
+  },
+  "top_odds_ratios": {
+    "Total_Trans_Ct": {
+      "odds_ratio": 0.061,
+      "ci_low": 0.051,
+      "ci_high": 0.072
+    },
+    "Total_Trans_Amt": {
+      "odds_ratio": 5.203,
+      "ci_low": 4.465,
+      "ci_high": 6.062
+    },
+    "Card_Category_Gold": {
+      "odds_ratio": 2.902,
+      "ci_low": 1.456,
+      "ci_high": 5.787
+    },
+    "Gender_M": {
+      "odds_ratio": 0.409,
+      "ci_low": 0.308,
+      "ci_high": 0.544
+    },
+    "Income_Category_$120K +": {
+      "odds_ratio": 2.16,
+      "ci_low": 1.406,
+      "ci_high": 3.319
+    },
+    "Total_Revolving_Bal": {
+      "odds_ratio": 0.468,
+      "ci_low": 0.417,
+      "ci_high": 0.525
+    },
+    "Total_Relationship_Count": {
+      "odds_ratio": 0.497,
+      "ci_low": 0.457,
+      "ci_high": 0.541
+    },
+    "Total_Ct_Chng_Q4_Q1": {
+      "odds_ratio": 0.514,
+      "ci_low": 0.47,
+      "ci_high": 0.561
+    },
+    "Marital_Status_Single": {
+      "odds_ratio": 1.836,
+      "ci_low": 1.556,
+      "ci_high": 2.166
+    },
+    "Contacts_Count_12_mon": {
+      "odds_ratio": 1.764,
+      "ci_low": 1.63,
+      "ci_high": 1.91
+    },
+    "Marital_Status_Unknown": {
+      "odds_ratio": 1.724,
+      "ci_low": 1.292,
+      "ci_high": 2.3
+    },
+    "Months_Inactive_12_mon": {
+      "odds_ratio": 1.671,
+      "ci_low": 1.55,
+      "ci_high": 1.801
+    }
+  },
+  "assumptions": {
+    "interchange_rate": 0.018,
+    "revolve_margin": 0.15,
+    "annual_fee": {
+      "Blue": 0,
+      "Silver": 40,
+      "Gold": 75,
+      "Platinum": 150
+    },
+    "contact_cost": 2.0,
+    "incentive": 25.0,
+    "redeem_nonchurn": 0.2,
+    "save_rate": 0.25
+  },
+  "segment_economics": {
+    "S1 Disengaging": {
+      "contacted": 2285.0,
+      "would_churn": 1028.0,
+      "saved": 257.0,
+      "benefit": 29517.481,
+      "cost": 10855.0,
+      "net": 18662.481,
+      "breakeven_save_rate": 0.092,
+      "roi": 1.719
+    },
+    "S2 Single-product, no revolving": {
+      "contacted": 380.0,
+      "would_churn": 128.0,
+      "saved": 32.0,
+      "benefit": 2464.458,
+      "cost": 2020.0,
+      "net": 444.458,
+      "breakeven_save_rate": 0.205,
+      "roi": 0.22
+    },
+    "S3 Service friction": {
+      "contacted": 1082.0,
+      "would_churn": 120.0,
+      "saved": 30.0,
+      "benefit": 5615.11,
+      "cost": 6974.0,
+      "net": -1358.89,
+      "breakeven_save_rate": 0.311,
+      "roi": -0.195
+    },
+    "S4 High-value stable": {
+      "contacted": 1954.0,
+      "would_churn": 96.0,
+      "saved": 24.0,
+      "benefit": 10468.884,
+      "cost": 13198.0,
+      "net": -2729.116,
+      "breakeven_save_rate": 0.315,
+      "roi": -0.207
+    }
+  },
+  "ev_plan": {
+    "contacted": 2431.0,
+    "would_churn": 965.0,
+    "saved": 241.25,
+    "benefit": 42805.436499999996,
+    "cost": 12192.0,
+    "net": 30613.436499999996,
+    "breakeven_save_rate": 0.07120590862331237,
+    "share_of_churners_reached": 0.5931161647203442
+  },
+  "ev_by_segment": {
+    "Core (no campaign)": 397,
+    "S1 Disengaging": 1308,
+    "S2 Single-product, no revolving": 131,
+    "S3 Service friction": 274,
+    "S4 High-value stable": 321
+  },
+  "grid": {
+    "save rate 10%": {
+      "incentive $15": 9480.0,
+      "incentive $25": 7142.0,
+      "incentive $40": 5129.0
+    },
+    "save rate 15%": {
+      "incentive $15": 17649.0,
+      "incentive $25": 14004.0,
+      "incentive $40": 10540.0
+    },
+    "save rate 25%": {
+      "incentive $15": 37498.0,
+      "incentive $25": 30613.0,
+      "incentive $40": 23233.0
+    },
+    "save rate 35%": {
+      "incentive $15": 58006.0,
+      "incentive $25": 49091.0,
+      "incentive $40": 37977.0
+    }
+  },
+  "scenarios": {
+    "Pessimistic": {
+      "net": 7142.3315999999995,
+      "contacted": 1218,
+      "saved": 58.400000000000006,
+      "net_per_1m": 705276.1528586945
+    },
+    "Base": {
+      "net": 30613.436499999996,
+      "contacted": 2431,
+      "saved": 241.25,
+      "net_per_1m": 3022952.1575984987
+    },
+    "Optimistic": {
+      "net": 49091.13079999999,
+      "contacted": 2976,
+      "saved": 387.45,
+      "net_per_1m": 4847549.205095289
+    }
+  },
+  "segments": {
+    "S1 Disengaging": {
+      "customers": 2285,
+      "churners": 1028,
+      "churn_rate": 0.4499,
+      "avg_revenue_churner": 139.854,
+      "lift_vs_avg": 2.8003,
+      "share_of_all_churners": 0.6318
+    },
+    "S2 Single-product, no revolving": {
+      "customers": 380,
+      "churners": 128,
+      "churn_rate": 0.3368,
+      "avg_revenue_churner": 102.0143,
+      "lift_vs_avg": 2.0966,
+      "share_of_all_churners": 0.0787
+    },
+    "S3 Service friction": {
+      "customers": 1082,
+      "churners": 120,
+      "churn_rate": 0.1109,
+      "avg_revenue_churner": 212.1703,
+      "lift_vs_avg": 0.6903,
+      "share_of_all_churners": 0.0738
+    },
+    "Core (no campaign)": {
+      "customers": 4426,
+      "churners": 255,
+      "churn_rate": 0.0576,
+      "avg_revenue_churner": 132.881,
+      "lift_vs_avg": 0.3586,
+      "share_of_all_churners": 0.1567
+    },
+    "S4 High-value stable": {
+      "customers": 1954,
+      "churners": 96,
+      "churn_rate": 0.0491,
+      "avg_revenue_churner": 461.2035,
+      "lift_vs_avg": 0.3058,
+      "share_of_all_churners": 0.059
+    }
+  }
+}
